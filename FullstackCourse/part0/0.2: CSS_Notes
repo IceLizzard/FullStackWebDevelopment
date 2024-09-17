@@ -1,0 +1,117 @@
+```markdown
+# CSS Basics Summary
+
+## What is CSS?
+- **CSS (Cascading Style Sheets)** is used to style HTML elements.
+- CSS is not a programming or markup language, but a style sheet language.
+
+## Applying CSS to HTML
+- Save CSS in a `.css` file (e.g., `styles/style.css`).
+- Link the CSS file in your HTML file using the `<link>` element inside the `<head>` section:
+  
+```html
+<link href="styles/style.css" rel="stylesheet" />
+```
+
+## Anatomy of a CSS Ruleset
+- **Selector**: Targets the HTML element to style (e.g., `<p>`).
+- **Declaration**: The styling rule, consists of:
+  - **Property**: The style to be applied (e.g., `color`).
+  - **Value**: The specific style (e.g., `red`).
+- **Example**:
+  
+```css
+p {
+  color: red;
+}
+```
+
+## Selecting Multiple Elements
+- To style multiple elements with the same ruleset, use commas to separate selectors.
+  
+```css
+p,
+li,
+h1 {
+  color: red;
+}
+```
+
+## Common CSS Selectors
+- **Element Selector**: Targets all instances of a specific HTML element (e.g., `p`).
+- **ID Selector**: Targets an element by its unique `id` (e.g., `#my-id`).
+- **Class Selector**: Targets elements with a specific class (e.g., `.my-class`).
+- **Attribute Selector**: Targets elements with a specified attribute (e.g., `img[src]`).
+- **Pseudo-class Selector**: Targets elements in a specific state (e.g., `a:hover`).
+
+## Fonts and Text Styling
+- To add custom fonts, link a font service (e.g., Google Fonts) in your HTML `<head>`:
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+```
+
+- Set global text styles in your CSS:
+
+```css
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+```
+
+- Example for headings and paragraphs:
+
+```css
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+```
+
+## The CSS Box Model
+- HTML elements are often treated as boxes with properties like:
+  - **Padding**: Space inside the element, around the content.
+  - **Border**: The line around the padding.
+  - **Margin**: Space outside the border.
+
+- Example styling for the `<body>` element:
+
+```css
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px;
+  border: 5px solid black;
+}
+```
+
+## Positioning Elements
+- Example for positioning a heading:
+
+```css
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+```
+
+## Centering an Image
+- Use `display: block;` to convert the image from an inline element to a block-level element:
+
+```css
+img {
+  display: block;
+  margin: 0 auto;
+}
+```

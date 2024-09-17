@@ -1,0 +1,33 @@
+# HTML Basics Summary
+
+## HTML Overview
+- HTML (HyperText Markup Language) is the code used to structure web pages and their content (e.g., paragraphs, lists, images).
+- It consists of a series of elements that enclose content, affecting its appearance and behavior.
+
+## HTML Elements
+- **Structure**: HTML elements consist of:
+  - **Opening Tag**: Indicates where an element begins (e.g., `<p>`).
+  - **Closing Tag**: Indicates where an element ends (e.g., `</p>`).
+  - **Content**: The text or other elements contained within the tags.
+  - **Attributes**: Provide additional information about elements (e.g., `<p class="editor-note">`).
+
+## Nesting Elements
+- Elements can be nested within one another (e.g., `<p>My cat is <strong>very</strong> grumpy.</p>`).
+- Proper nesting is essential to avoid errors.
+
+## Void Elements
+- Some elements do not require a closing tag (e.g., `<img src="image.png" alt="Description" />`).
+
+## HTML Document Structure
+- An HTML document consists of:
+  - `<!doctype html>`: Declares the document type.
+  - `<html>`: Root element of the document.
+  - `<head>`: Contains metadata and links to styles/scripts (e.g., character set, title).
+  - `<body>`: Contains the content displayed to users.
+
+## Common HTML Elements
+- **Images**: Use `<img>` to embed images, including `src` and `alt` attributes for accessibility.
+- **Headings**: Use `<h1>` to `<h6>` for headings and subheadings.
+- **Paragraphs**: Use `<p>` for blocks of text.
+- **Lists**: Use `<ul>` for unordered lists and `<ol>` for ordered lists, with `<li>` for list items.
+- **Links**: Use `<a>` to create hyperlinks, specifying the target URL with the `href` attribute.
